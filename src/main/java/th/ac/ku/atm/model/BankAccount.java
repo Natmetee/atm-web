@@ -9,8 +9,7 @@ public class BankAccount {
     private int customerId;
     private String type;
     private double balance;
-    public BankAccount(int id, int customerId, String type, double balance) {
-        this.id = id;
+    public BankAccount(int customerId, String type, double balance) {
         this.customerId = customerId;
         this.type = type;
         this.balance = balance;

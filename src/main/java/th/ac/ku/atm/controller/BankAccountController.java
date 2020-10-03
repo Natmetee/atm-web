@@ -26,10 +26,13 @@ public class BankAccountController {
 
     }
     @PostMapping
-    public String RegisterBankaccount(@ModelAttribute BankAccount bankAccount, Model model){
-        bankAccountService.CreateAccount(bankAccount);
+    public String OpenAccount(@ModelAttribute BankAccount bankAccount, Model model){
+        bankAccountService.openAccount(bankAccount);
         model.addAttribute("Allaccount",bankAccountService.getBankAccounts());
         return "redirect:bankaccount";
     }
+
+
+
 
 }
