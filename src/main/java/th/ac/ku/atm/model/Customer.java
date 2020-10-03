@@ -1,4 +1,4 @@
-package th.ac.ku.atm.controller;
+package th.ac.ku.atm.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 @Entity
@@ -39,4 +39,12 @@ public class Customer {
         this.pin = pin;
     }
 
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", pin='" + pin + '\'' +
+                '}';
+    }
 }

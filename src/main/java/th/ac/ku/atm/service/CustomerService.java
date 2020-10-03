@@ -1,9 +1,10 @@
-package th.ac.ku.atm.controller;
+package th.ac.ku.atm.service;
 
 import org.mindrot.jbcrypt.BCrypt;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import th.ac.ku.atm.data.CustomerRepository;
+import th.ac.ku.atm.model.Customer;
+
 import java.util.List;
 import java.util.NoSuchElementException;
 
